@@ -1,0 +1,78 @@
+// main: ../style.less
+
+.form {
+    background: url("../images/input/bg1.svg") no-repeat;
+    background-size: cover;
+    padding-top: 3.2rem;
+    padding-bottom: 3rem;
+    margin-bottom: 6.2rem;
+}
+
+.form__inner {
+    width: 100%;
+    max-width: 940px;
+    margin: 0 auto;
+
+    background: #181A51;
+
+    @media @mobile {
+        max-width: 640px;
+    }
+}
+
+.form__title {
+    font-family: @rubik;
+    font-size: 2.4rem;
+    font-weight: 500;
+    color: @orange;
+
+    text-align: center;
+    padding-top: 3.33rem;
+
+    margin-bottom: 1.33rem;
+
+    @media @mobile {
+        font-size: 2rem;
+    }
+}
+
+.form__text {
+    font-family: @rubik;
+    font-size: 1.06rem;
+    color: @gray;
+
+    text-align: center;
+    width: 100%;
+    max-width: 396px;
+    margin: 0 auto 1.53rem;
+}
+
+.form__input {
+    display: flex;
+    justify-content: center;
+
+    input {
+        width: 100%;
+        max-width: 288px;
+        background-color: #646689;
+        border: none;
+        padding-left: 1rem;
+        font-size: 0.94rem;
+        color: @white;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    margin-bottom: 1.06rem;
+}
+
+.form__description {
+    font-size: 0.94rem;
+    font-weight: 600;
+
+    text-align: center;
+
+    padding-bottom: 3.33rem;
+}

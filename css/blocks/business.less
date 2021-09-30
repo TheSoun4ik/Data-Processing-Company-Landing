@@ -1,0 +1,71 @@
+// main: ../style.less
+
+.business {
+    background: url("../images/business/bg2.svg") right no-repeat;
+    padding-bottom: 143px;
+
+    margin-bottom: 7rem;
+
+    @media @mobile {
+        margin-bottom: 3rem;
+    }
+}
+
+.business__inner {
+    display: flex;
+}
+
+.business__content {
+    width: 45%;
+}
+
+.business__title {
+    font-family: @inter;
+    font-size: 2.8rem;
+    color: @green;
+    line-height: 1.1;
+
+    span {
+        color: @orange;
+    }
+
+    margin-bottom: 2.13rem;
+}
+
+.business__text {
+    font-size: 1rem;
+    color: @gray;
+    font-weight: 600;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+
+    margin-bottom: 4rem;
+}
+
+.business__photo {
+    width: 55%;
+    text-align: center;
+    position: relative;
+    left: 75px;
+}
+
+.business__photo-left {
+    position: absolute;
+    left: 107px;
+    top: 106px;
+    z-index: 3;
+}
+
+.business__photo-main {
+    position: relative;
+    z-index: 2;
+}
+
+.business__photo-right {
+    position: absolute;
+    left: 415px;
+    top: 230px;
+    z-index: 1;
+
+    overflow: hidden;
+}

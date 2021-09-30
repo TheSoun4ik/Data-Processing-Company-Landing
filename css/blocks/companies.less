@@ -1,0 +1,30 @@
+// main: ../style.less
+
+.companies {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 6.33rem;
+
+    @media @notebook {
+        flex-wrap: wrap;
+    }
+}
+
+.companies__item {
+    margin-right: 4.93rem;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @media @notebook {
+        display: flex;
+        justify-content: center;
+
+        width: 33%;
+        margin-right: 0;
+        margin-bottom: 1rem;
+
+    }
+}

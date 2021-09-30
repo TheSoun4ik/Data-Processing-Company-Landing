@@ -1,0 +1,85 @@
+// main: ../style.less
+
+.btn {
+    font-size: 0.8rem;
+    font-family: @rubik;
+    line-height: 1.5;
+    font-weight: 500;
+    color: @orange;
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+    text-decoration: none;
+
+    border: 1px solid @orange;
+    border-radius: 6px;
+    padding: 0.53rem 1.86rem;
+
+    &:first-child {
+        margin-right: 1.4rem;
+        
+    }
+
+    transition: color 0.2s linear, background-color 0.2s linear, box-shadow 0.1s linear;
+    &:hover {
+        color: @white;
+        background-color: @orange;
+
+        box-shadow: -5px 10px 35px rgba(@orange, 0.2);
+    }
+
+    &--bg {
+        padding: 0.86rem 3.86rem;
+
+        @media @tablet {
+            padding: 0.86rem 2rem;
+        }
+
+        @media @mobile-sm {
+            padding: 0.86rem 1rem;
+        }
+
+        @media (max-width: 450px) {
+            padding: 0.5rem 0.7rem;
+        }
+
+        &:first-child {
+            white-space: nowrap;
+            padding: 0.86rem 3rem;
+
+            @media @mobile {
+                padding: 0.86rem 1.7rem;
+            }
+        }
+    }
+
+    &--md {
+        padding: 0.94rem 2rem;
+    }
+
+    &--input {
+        color: @white;
+        background-color: @orange;
+        padding: 1.2rem 1.86rem;
+        border-radius: 0 6px 6px 0;
+
+        transition: box-shadow 0.2s linear;
+        &:hover {
+            box-shadow: 5px 10px 25px rgba(@orange, 0.2);
+        }
+    }
+
+    @media @mobile {
+        font-size: 1rem;
+    }
+
+    @media @mobile-sm {
+        font-size: 0.8rem;
+    }
+}
+
+#business-btn {
+    @media (max-width: 450px) {
+        padding: 0.8rem 1.5rem;
+    }
+}

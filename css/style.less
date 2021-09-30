@@ -1,0 +1,54 @@
+// compress: true
+
+html {
+    overflow-x: hidden;
+
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+
+    color: #8476AA;
+    // background: linear-gradient(90deg, rgba(4,13,62,1) 1%, rgba(59,29,96,1) 100%);
+    background: linear-gradient(222.26deg, #3B1D60 1%, #040D3E 45%) center;
+    // background: #040D3E url("../images/bg1.jpg") center no-repeat;
+    // background-size: cover;
+
+    overflow-x: hidden;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+// Blocks
+
+@import "container";
+@import "vars";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/btn";
+@import "blocks/intro";
+@import "blocks/choice";
+@import "blocks/companies";
+@import "blocks/traffic";
+@import "blocks/ways";
+@import "blocks/project";
+@import "blocks/business";
+@import "blocks/info";
+@import "blocks/form";
+@import "blocks/footer";
+@import "blocks/burger";
+
+// Helpers
+
+@import "helpers";

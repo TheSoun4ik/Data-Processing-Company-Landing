@@ -1,0 +1,87 @@
+// main: ../style.less
+
+.footer {
+    background: url("../images/footer/bg.svg") no-repeat;
+    
+}
+
+.footer__header {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 3rem;
+
+    margin-bottom: 6.26rem;
+}
+
+.footer__title {
+    font-family: @inter;
+    font-size: 1.73rem;
+    font-weight: 700;
+    color: @orange;
+    letter-spacing: 0.32px;
+}
+
+.footer__social {
+
+    img {
+        margin-right: 1.06rem;
+        cursor: pointer;
+        
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.footer__list {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 8rem;
+}
+
+
+.footer__col-title {
+    font-family: @inter;
+    font-size: 1rem;
+    font-weight: 700;
+    color: @white;
+
+    margin-bottom: 1.66rem;
+}
+
+.footer__page {
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+    color: @white;
+    text-decoration: none;
+
+    margin-bottom: 1.06rem;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.footer__copyright {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__copyright-item {
+    font-family: @inter;
+    font-size: 0.94rem;
+    margin-right: 2.13rem;
+
+    padding-bottom: 4rem;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}

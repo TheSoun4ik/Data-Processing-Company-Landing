@@ -1,0 +1,99 @@
+// main: ../style.less
+
+.intro {
+    position: relative;
+
+    @media @mobile {
+        padding-top: 10rem;
+    }
+}
+
+.intro__content {
+    width: 46%;
+}
+
+.intro__title {
+    font-family: @inter;
+    font-size: 2.94rem;
+    font-weight: 700;
+    line-height: 1.13;
+    color: @green;
+
+    margin-bottom: 0.73rem;
+
+    @media @tablet {
+        font-size: 2.5rem;
+    }
+
+    @media @mobile-sm {
+        font-size: 2.2rem;
+    }
+}
+
+.intro__text {
+    font-size: 1.2;
+    line-height: 1.2;
+    color: @gray;
+    font-weight: 600;
+
+    margin-bottom: 2.66rem;
+}
+
+.intro__btns {
+    margin-bottom: 4rem;
+
+    @media @tablet {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+}
+
+.intro__video {
+    display: flex;
+    align-items: center;
+}
+
+.intro__video-player {
+    margin-right: 1.33rem;
+
+    cursor: pointer;
+}
+
+.intro__video-text {
+    font-family: @rubik;
+    font-size: 1.06rem;
+    color: @gray;
+    line-height: 1.37;
+
+    span {
+        font-family: @rubik;
+        font-size: 0.94rem;
+        line-height: 1.57;
+        color: #6D6D78;
+
+        cursor: pointer;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    @media @tablet {
+        font-size: 1rem;
+    }
+}
+
+.intro__photo {
+    position: absolute;
+    right: 0;
+    top: -30px;
+    z-index: 1;
+    width: 50%;
+
+    background: url("../images/intro/bg.svg") center no-repeat;
+
+    @media @mobile {
+        top: 120px;
+    }
+}

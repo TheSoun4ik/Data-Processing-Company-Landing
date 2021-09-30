@@ -1,0 +1,79 @@
+// main: ../style.less
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 3rem;
+
+    @media @mobile {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+}
+
+.nav__left {
+    display: flex;
+    align-items: center;
+}
+
+.nav__inner {
+    @media @mobile {
+        display: none;
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        z-index: 1000;
+        background-color: #341b5a;
+        box-shadow: 0 5px 10px rgb(0 0 0 / 30%);
+        text-align: center;
+
+        flex-direction: column;
+    }
+}
+
+.nav__link {
+    font-size: 0.8rem;
+    color: @gray;
+    line-height: 1.5;
+    font-weight: 600;
+
+    text-transform: uppercase;
+    text-decoration: none;
+
+    margin-right: 1.4rem;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    transition: color 0.1s linear;
+    &:hover {
+        color: @white;
+    }
+
+    @media @mobile {
+        font-size: 1rem;
+        margin-right: 0;
+        padding: 1rem 1rem;
+    }
+}
+
+.burger {
+    margin-right: 3rem;
+    background: none;
+    border: none;
+
+    @media @tablet {
+        margin-right: 1rem;
+    }
+}
+
+.nav__right {
+    display: flex;
+    align-items: center;
+
+}
